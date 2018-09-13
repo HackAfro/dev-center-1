@@ -7,6 +7,9 @@ ul {
   list-style: none;
   padding-left: 0; }
 
+.hidden {
+  display: none; }
+
 .content {
   font-family: 'Fira Sans', sans-serif;
   display: flex; }
@@ -158,7 +161,14 @@ ul {
         .content .main .card-data .card-header h3 {
           font-size: 16px;
           opacity: 0.7;
-          letter-spacing: .2px; }
+          letter-spacing: .2px;
+          cursor: pointer; }
+        .content .main .card-data .card-header svg {
+          margin-right: 3px;
+          color: rgba(0, 0, 0, 0.6);
+          width: 20px;
+          height: 20px;
+          cursor: pointer; }
         .content .main .card-data .card-header .money-goal {
           font-size: 12px;
           color: rgba(0, 0, 0, 0.3);
@@ -311,6 +321,69 @@ ul {
                 font-family: 'Fira Sans';
                 border-radius: 4px;
                 cursor: pointer; }
+        .content .main .card-data .card-body .chart-space {
+          flex: 3;
+          padding: 15px 30px; }
+          .content .main .card-data .card-body .chart-space .header {
+            display: flex;
+            justify-content: space-between; }
+            .content .main .card-data .card-body .chart-space .header h6 {
+              font-size: 13px;
+              font-weight: normal;
+              color: rgba(0, 0, 0, 0.3);
+              margin: 0; }
+            .content .main .card-data .card-body .chart-space .header svg {
+              width: 19px;
+              height: 19px;
+              color: rgba(0, 0, 0, 0.4);
+              stroke-width: 3; }
+          .content .main .card-data .card-body .chart-space .body .task-item {
+            display: flex;
+            margin: 22px 0; }
+            .content .main .card-data .card-body .chart-space .body .task-item .circle-holder {
+              flex: 2; }
+              .content .main .card-data .card-body .chart-space .body .task-item .circle-holder .task-circle {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                background: #EBF8FA;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                .content .main .card-data .card-body .chart-space .body .task-item .circle-holder .task-circle p {
+                  margin: 4px 0;
+                  font-size: 12px;
+                  color: rgba(0, 0, 0, 0.4); }
+              .content .main .card-data .card-body .chart-space .body .task-item .circle-holder p {
+                text-align: center;
+                font-size: 13px;
+                color: rgba(0, 0, 0, 0.6);
+                margin: 10px;
+                font-weight: 500; }
+            .content .main .card-data .card-body .chart-space .body .task-item .task-tags {
+              flex: 4;
+              padding: 8px 20px;
+              display: flex;
+              flex-wrap: wrap; }
+              .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags {
+                padding: 3px 10px 3px 15px;
+                background: #E2F4FF;
+                border-radius: 10px;
+                margin: 6px 4px;
+                display: flex;
+                align-items: center;
+                max-width: 60px;
+                min-width: 60px; }
+                .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags span {
+                  font-size: 10px;
+                  margin-right: 10px;
+                  margin-left: 5px;
+                  color: #5BA0F5; }
+                .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags svg {
+                  width: 14px;
+                  height: 14px;
+                  color: #5BA0F5; }
         .content .main .card-data .card-body .side-info {
           flex: 1.5;
           border-left: 1px solid rgba(0, 0, 0, 0.1);
