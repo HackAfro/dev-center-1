@@ -8,18 +8,24 @@ const cardHeader = document.querySelector('.card-header .header__text');
 const chatArea = [...document.getElementsByClassName('chat-space')][0];
 const chartArea = [...document.getElementsByClassName('chart-space')][0];
 const backButton = [...document.getElementsByClassName('back-button')][0];
+const priceArea = [...document.getElementsByClassName('price-estimator')][0];
+const sideInfo = [...document.getElementsByClassName('side-info')][0];
 
 
 cardHeader.addEventListener('click', () => {
   chatArea.classList.add('hidden');
   chartArea.classList.remove('hidden');
   backButton.classList.remove('hidden');
+  priceArea.classList.remove('hidden')
+  sideInfo.classList.add('hidden');
 })
 
 backButton.onclick = () => {
   chatArea.classList.remove('hidden');
   chartArea.classList.add('hidden');
   backButton.classList.add('hidden');
+  priceArea.classList.add('hidden')
+  sideInfo.classList.remove('hidden');
 }
 
 

@@ -10,6 +10,30 @@ ul {
 .hidden {
   display: none; }
 
+.task-tags {
+  flex: 4;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap; }
+  .task-tags .tags {
+    padding: 3px 10px 3px 15px;
+    background: #E2F4FF;
+    border-radius: 10px;
+    margin: 6px 4px;
+    display: flex;
+    align-items: center;
+    max-width: 60px;
+    min-width: 60px; }
+    .task-tags .tags span {
+      font-size: 10px;
+      margin-right: 10px;
+      margin-left: 5px;
+      color: #5BA0F5; }
+    .task-tags .tags svg {
+      width: 14px;
+      height: 14px;
+      color: #5BA0F5; }
+
 .content {
   font-family: 'Fira Sans', sans-serif;
   display: flex; }
@@ -361,29 +385,6 @@ ul {
                 color: rgba(0, 0, 0, 0.6);
                 margin: 10px;
                 font-weight: 500; }
-            .content .main .card-data .card-body .chart-space .body .task-item .task-tags {
-              flex: 4;
-              padding: 8px 20px;
-              display: flex;
-              flex-wrap: wrap; }
-              .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags {
-                padding: 3px 10px 3px 15px;
-                background: #E2F4FF;
-                border-radius: 10px;
-                margin: 6px 4px;
-                display: flex;
-                align-items: center;
-                max-width: 60px;
-                min-width: 60px; }
-                .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags span {
-                  font-size: 10px;
-                  margin-right: 10px;
-                  margin-left: 5px;
-                  color: #5BA0F5; }
-                .content .main .card-data .card-body .chart-space .body .task-item .task-tags .tags svg {
-                  width: 14px;
-                  height: 14px;
-                  color: #5BA0F5; }
         .content .main .card-data .card-body .side-info {
           flex: 1.5;
           border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -514,5 +515,68 @@ ul {
                 width: 25px;
                 border-radius: 3px;
                 margin: 2px 6px; }
+        .content .main .card-data .card-body .price-estimator {
+          flex: 1.7;
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 10px; }
+          .content .main .card-data .card-body .price-estimator h5 {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 15px;
+            margin-bottom: 0; }
+          .content .main .card-data .card-body .price-estimator .price-slider {
+            padding: 10px;
+            margin-bottom: 30px; }
+            .content .main .card-data .card-body .price-estimator .price-slider .prices {
+              display: flex;
+              justify-content: space-between; }
+              .content .main .card-data .card-body .price-estimator .price-slider .prices h6 {
+                margin: 7px 0;
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 13px; }
+            .content .main .card-data .card-body .price-estimator .price-slider .slider {
+              width: 100%;
+              height: 6px;
+              border-radius: 3px;
+              background: #E2F4FF;
+              position: relative; }
+              .content .main .card-data .card-body .price-estimator .price-slider .slider:before {
+                content: '';
+                position: absolute;
+                width: 50%;
+                left: 0;
+                background: #2F7EF2;
+                height: 6px;
+                border-radius: 4px; }
+              .content .main .card-data .card-body .price-estimator .price-slider .slider:after {
+                content: '';
+                position: absolute;
+                width: 15px;
+                left: 49%;
+                background: #2F7EF2;
+                height: 15px;
+                border-radius: 50%;
+                bottom: -3.2px; }
+          .content .main .card-data .card-body .price-estimator .action-buttons {
+            margin-top: 40px;
+            padding: 15px;
+            display: flex; }
+            .content .main .card-data .card-body .price-estimator .action-buttons button {
+              padding: 10px 20px;
+              margin: 0 8px;
+              border-radius: 4px;
+              border: none;
+              font-size: 12px;
+              font-weight: 600;
+              text-align: center;
+              font-family: 'Lato'; }
+            .content .main .card-data .card-body .price-estimator .action-buttons button:nth-child(1) {
+              background: #4d82fc;
+              color: white; }
+            .content .main .card-data .card-body .price-estimator .action-buttons button:nth-child(2) {
+              background: white;
+              border: 1px solid #4d82fc;
+              color: #4d82fc; }
 
 /*# sourceMappingURL=index.css.map */
